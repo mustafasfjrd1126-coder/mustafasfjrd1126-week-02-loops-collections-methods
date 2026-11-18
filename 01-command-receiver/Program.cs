@@ -5,12 +5,14 @@ while (true)
 
     // TODO: Avslutt med break når command er EXIT eller null.
     // TODO: Ellers skriv Received: <command>.
-       if (command == "EXIT" || command == " ")
+       if (command == "EXIT" || command == null)
        {
         break;
        }
        Console.WriteLine($"Received: {command}");
 
+       
+
 
 }
-Console.WriteLine("Receiver stopped.");
+
