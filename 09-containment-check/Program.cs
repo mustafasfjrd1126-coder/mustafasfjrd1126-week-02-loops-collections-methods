@@ -9,8 +9,14 @@ else
     Console.WriteLine("REJECTED");
 }
 
+
 static bool CanContain(int capacity, int occupied, int incoming)
 {
     // TODO
-    return false;
+    if (capacity >= occupied + incoming)
+    {
+        return true;
+    }
+    else
+        return false;
 }
